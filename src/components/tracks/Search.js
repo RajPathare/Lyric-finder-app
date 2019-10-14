@@ -41,7 +41,7 @@ class Search extends Component {
               <h1 className='display-4 text-center'>
                 <i className='fa fa-music'></i> Search for a song
               </h1>
-              <p className='lead text-center'>Get the lyrics for any song</p>
+              <p className='lead text-center'>Get the lyrics for any song!</p>
               <form onSubmit={this.findTrack.bind(this, dispatch)}>
                 <div className='form-group'>
                   <input
