@@ -12,7 +12,7 @@ class Search extends Component {
 
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MUSIC_KEY}`
+        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=4caa8fdb3ff38a8cc1f9d0d2d10946a0`
       )
       .then(res => {
         //console.log(res.data);
@@ -51,7 +51,6 @@ class Search extends Component {
                     name='trackTitle'
                     value={this.state.trackTitle}
                     onChange={this.onChange}
-                    autoComplete='off'
                   />
                 </div>
                 <button
